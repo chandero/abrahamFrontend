@@ -37,3 +37,4 @@ module.exports = merge(baseWebpackConfig, {
     new FriendlyErrorsPlugin()
   ]
 })
+logLevel: "debug"
