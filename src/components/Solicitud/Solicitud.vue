@@ -58,7 +58,9 @@
         </v-tabs-bar>
         <v-tabs-items>
           <v-tabs-content v-for="tab in tabs" :key="tab.key" :id="tab.text">
-            <component :is="tab.template"></component>
+            <keep-alive>
+              <component :is="tab.template"></component>
+            </keep-alive>
           </v-tabs-content>
         </v-tabs-items>
     </v-tabs>
